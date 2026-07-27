@@ -16,6 +16,16 @@ h1 {
     margin-top: 40px;
 }
 
+#timer {
+    font-size: 64px;
+    color: red;
+    font-family: "Cinzel", serif;
+    font-weight: 800;
+    text-align: center;
+    margin: 40px auto;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
 button {
     width: 260px;
     padding: 16px;
