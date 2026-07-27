@@ -1,24 +1,68 @@
-body{
-    background:#1b1b1b;
-    color:white;
-    text-align:center;
-    font-family:Arial,sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: white;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    margin: 0;
 }
 
-h1{
-    margin-top:40px;
+h1 {
+    font-family: "Cinzel", serif;
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 40px;
 }
 
-#timer{
-    font-size:64px;
-    color:red;
-    margin:40px;
+button {
+    width: 260px;
+    padding: 16px;
+    margin: 12px auto;
+    display: block;
+
+    border: none;
+    border-radius: 18px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    background: #374151;
+    color: white;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s,
+        box-shadow .2s,
+        background .2s;
 }
 
-button{
-    display:block;
-    width:250px;
-    margin:15px auto;
-    padding:15px;
-    font-size:20px;
+button:hover {
+    transform: translateY(-3px);
+    background: #4b5563;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+}
+
+button:active {
+    transform: scale(.95);
+}
+
+.settings-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+    font-size: 28px;
+
+    padding: 0;
+}
+
+.settings-button:hover {
+    transform: rotate(45deg);
 }
