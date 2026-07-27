@@ -20,3 +20,25 @@ function updateTimer() {
 
 updateTimer();
 setInterval(updateTimer,1000);
+
+
+const settingsButton = document.getElementById("settings");
+const settingsPopup = document.getElementById("settingsPopup");
+const closeSettings = document.getElementById("closeSettings");
+
+
+settingsButton.onclick = function() {
+    settingsPopup.style.display = "flex";
+};
+
+
+closeSettings.onclick = function() {
+    settingsPopup.style.display = "none";
+};
+
+
+settingsPopup.onclick = function(event) {
+    if(event.target === settingsPopup) {
+        settingsPopup.style.display = "none";
+    }
+};
